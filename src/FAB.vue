@@ -306,7 +306,11 @@
             }
         },
         mounted() {
-            this.moveTransition();
+            setTimeout(()=>{
+                console.log('mounted from vue fab');
+                this.moveTransition();
+            }, 2000);
+            
         },
         created() {
             this.setPosition();
